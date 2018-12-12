@@ -1,0 +1,7 @@
+{
+  "filters": [
+    "pandoc-fignos",
+    "pandoc-eqnos",
+    "pandoc-tablenos"
+  ]
+}

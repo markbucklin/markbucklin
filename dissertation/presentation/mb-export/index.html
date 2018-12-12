@@ -1,0 +1,429 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>RevealJS : z:\People\Mark\dissertation\presentation\mb.md</title>
+  <link rel="stylesheet" href="css/reveal.css">
+  <link rel="stylesheet" href="css/theme/night.css" id="theme">
+
+
+  <!-- For syntax highlighting -->
+  <link rel="stylesheet" href="lib/css/Zenburn.css">
+
+
+
+  <!-- If the query includes 'print-pdf', use the PDF print sheet -->
+  <script>
+    document.write('<link rel="stylesheet" href="css/print/' + (window.location.search.match(/print-pdf/gi) ? 'pdf' : 'paper') + '.css" type="text/css" media="print">');
+  </script>
+
+  <style type="text/css">
+    @page {
+      margin: 0;
+      size: auto;
+    }
+  </style>
+
+  <script>
+    if (window.location.search.match(/print-pdf-now/gi)) {
+      window.print();
+    }
+  </script>
+
+</head>
+
+<body>
+
+  <div class="reveal">
+    <div class="slides">
+      <section data-markdown>
+        <script type="text/template">
+### Development & Application of a Closed-Loop Continuous Optical Neural Interface 
+###### Procedures for real-time image processing, neural signal extraction, and application to closed-loop control using wide-field Ca2+ fluorescence with awake behaving animals 
+April 13, 2017 
+##### Mark Bucklin
+
+</script>
+      </section>
+      <section data-markdown>
+        <script type="text/template">
+
+#### Lab Contributions
+* Behavior Box for spatial discrimination study
+* Mouse tracking software for Parkinson's model
+* Virtual Reality presentation and motion tracking on spherical treadmill
+* Microscopes for fluourescence imaging
+* Image acquisition software
+* Video processing software
+
+</script>
+      </section>
+      <section data-markdown>
+        <script type="text/template">
+#### Outline
+* Using Wide-field Fluourescence Microscopy to image brain activity
+* Video processing: *Batch* processing *Pipeline*
+* Storage issue: *Stream* processing *Graph*
+* Coding for the **Future**
+
+</script>
+      </section>
+      <section data-markdown>
+        <script type="text/template">
+
+#### Imaging Brain Activity in Mice with a Wide-field Fluourescence Microscope
+* Sensor: GCaMP
+  * Fluourescence change when calcium enters cell
+* Virus
+  * Delivers the GCaMP sensor
+* Blue LED
+  * sensor excitation
+* Optical Filters
+  * excitation filter + dichroic mirror + emission filter
+* scientific-CMOS Camera
+
+</script>
+      </section>
+      <section data-markdown>
+        <script type="text/template">
+				      
+
+#### Microscope and Mouse Securing Apparatus (headplate holder)
+![Widefield Microscope](widefield_microscope_diagram.png)<!-- {_class="reveal stretch"} -->
+</script>
+      </section>
+      <section data-markdown>
+        <script type="text/template">
+
+#### Image Processing
+* Noise filtering
+  * time-series decomposition
+* Motion Correction
+* Cell Segmentation
+  * Cell signal extraction: in manageable size
+
+</script>
+      </section>
+      <section data-markdown>
+        <script type="text/template">
+      
+#### Motion Correction
+* approaches to find displacement
+* Lucas-Kanade iterative search
+* Phase correlation, aka normalized cross correlation
+* Feature Matching
+    * Detect features (i.e. corners)
+    * Triangulate best match
+
+</script>
+      </section>
+      <section data-markdown>
+        <script type="text/template">
+
+#### Cell Segmentation
+* Adaptive thresholding
+* Morphological condensation
+* Temporal clustering with reduced feature descriptor of cells
+
+</script>
+      </section>
+      <section data-markdown>
+        <script type="text/template">
+
+#### Functional connectivity network behavior and behavioral relevance
+* Connections across source
+* Connections across time
+
+</script>
+      </section>
+      <section data-markdown>
+        <script type="text/template">
+
+### 3 Reasons we need to consider the future NOW
+
+</script>
+      </section>
+      <section data-markdown>
+        <script type="text/template">
+
+#### 1. Storage CRISIS: Data Volume
+* Traditional in science labs to store raw data
+  * 1 gb/s
+* current capitalization 2 MB/s (16 mb/s)
+* Storage capacity is fixed
+  * cumulative
+
+</script>
+      </section>
+      <section data-markdown>
+        <script type="text/template">
+
+#### 2. Information Loss: Opportunites to use expanded perspectives rather than reduced form
+  * Contrast
+    * Linear Scaling
+    * Lookup Tables
+  * Spatial and Temporal Filtering
+  * "Feature" images
+    * Gradients
+    * Surface Curvature
+
+</script>
+      </section>
+      <section data-markdown>
+        <script type="text/template">
+
+#### 3. Trend Sensor Performance and Ubiquity are **Exploding**
+Two core innovations in available technology
+* Molecular Engineering
+  * (i.e. GCaMP)
+* Cameras
+  * scientific CMOS
+  * inexpensive "machine vision" cameras
+* (so is software)
+
+</script>
+      </section>
+      <section data-markdown>
+        <script type="text/template">
+
+#### Feature Extraction is fast
+* "Feature" images (temporally independent)
+    * Gradients
+    * Surface Curvature							
+* Long Term Memory -> Storage structure
+    * Statistics changes (single pixel)
+    * Mutual information changes (inter-pixel)
+* Continuity
+
+</script>
+      </section>
+      <section data-markdown>
+        <script type="text/template">
+
+#### Graphs identifying network connectivity can be built/updated online
+* Think
+    * Facebook
+    * Google
+    * Netflix
+
+</script>
+      </section>
+      <section data-markdown>
+        <script type="text/template">
+      
+#### Computing Power and Open Software
+* Computing Power and Connectivity
+  * Remote Clusters (AWS)
+  * Graphics Processing Units (NVIDIA GTX)
+  * Embedded Units (NVIDIA Tegra X2)
+* Well developed libraries
+  * SciFio, OpenImageIO, BioFormats
+  * OpenCV, OpenVX
+  * GStreamer (much better)
+  * Shader Language extensions (GLSL, HLSL, Halide)
+  * CUDA
+* Scalable Computing frameworks
+
+
+</script>
+      </section>
+      <section data-markdown>
+        <script type="text/template">
+
+#### What is the way forward
+##### DataFlow processing model
+* Tensorflow
+
+</script>
+      </section>
+      <section data-markdown>
+        <script type="text/template">
+
+#### Standard graphics solutions
+* FFmpeg
+* GStreamer
+
+</script>
+      </section>
+      <section data-markdown>
+        <script type="text/template">
+
+#### Compression is everything
+  - Consciousness
+</script>
+      </section>
+      <section data-markdown>
+        <script type="text/template">
+      
+#### Map-Reduce -> Dataflow Processing
+* Actors model
+* Petri Nets
+* **Graph** Processing
+* i.e. Tensorflow
+
+
+</script>
+      </section>
+      <section data-markdown>
+        <script type="text/template">
+
+#### (for my parents who may wish to know what MATLAB looks like)          
+##### Incremental Update of Statistics
+```matlab  
+  function [m1,m2,m3,m4,fmin,fmax] = updateStatistics(x,m1,m2,m3,m4))
+  n = n + 1;
+  
+  % GET PIXEL SAMPLE
+  f = F(rowIdx,colIdx,k);
+  
+  % PRECOMPUTE & CACHE SOME VALUES FOR SPEED
+  d = single(f) - m1;
+  dk = d/n;
+  dk2 = dk^2;
+  s = d*dk*(n-1);
+  
+  % UPDATE CENTRAL MOMENTS
+  m1 = m1 + dk;
+  m4 = m4 + s*dk2*(n.^2-3*n+3) + 6*dk2*m2 - 4*dk*m3;
+  m3 = m3 + s*dk*(n-2) - 3*dk*m2;
+  m2 = m2 + s;
+  
+  % UPDATE MIN & MAX
+  fmin = min(fmin, f);
+  fmax = max(fmax, f);
+end
+```					
+
+</script>
+      </section>
+      <section data-markdown>
+        <script type="text/template">
+
+#### Incremental Update of Statistics
+##### Extract Feature
+```matlab  
+  function [dm1,dm2,dm3,dm4] = getStatisticUpdate(x,m1,m2,m3,m4)
+  % COMPUTE DIFFERENTIAL UPDATE TO CENTRAL MOMENTS
+  dm1 = dk;
+  m1 = m1 + dm1;
+  dm4 = s*dk2*(n^2-3*n+3) + 6*dk2*m2 - 4*dk*m3;   
+  dm3 = s*dk*(n-2) - 3*dk*m2;
+  dm2 = s;
+  m2 = m2 + dm2;
+  % NORMALIZE BY VARIANCE & SAMPLE NUMBER -> CONVERSION TO dVar, dSkew, dKurt   
+  dm2 = dm2/max(1,n-1);
+  dm3 = dm3*sqrt(max(1,n))/(m2^*5);
+  dm4 = dm4*n/(m2^2);					
+end
+```
+```matlab
+  [dm1,dm2,dm3,dm4] = arrayfun(@getStatisticUpdate(x,m1,m2,m3,m4)
+  
+  [dm1,dm2,dm3,dm4] = arrayfun(@getStatisticUpdate(rowidx,colidx)
+```
+
+</script>
+      </section>
+      <section data-markdown>
+        <script type="text/template">
+
+#### Acknowledgements
+The support and patience I have received from my committee has gone far beyond what should be expected of anyone. I can't thank you enough.
+* Xue Han, Ph.D.
+* Jerome Mertz, Ph.D.
+* Ian Davis, Ph.D.
+* Tom Bifano, Ph.D.
+* David Boas, Ph.D.
+ </script>
+      </section>
+    </div>
+  </div>
+
+  <script src="lib/js/head.min.js"></script>
+  <script src="js/reveal.js"></script>
+
+  <script>
+    function extend() {
+      var target = {};
+      for (var i = 0; i < arguments.length; i++) {
+        var source = arguments[i];
+        for (var key in source) {
+          if (source.hasOwnProperty(key)) {
+            target[key] = source[key];
+          }
+        }
+      }
+      return target;
+    }
+    // Optional libraries used to extend on reveal.js
+    var deps = [
+      { src: 'lib/js/classList.js', condition: function () { return !document.body.classList; } },
+      { src: 'plugin/markdown/marked.js', condition: function () { return !!document.querySelector('[data-markdown]'); } },
+      { src: 'plugin/markdown/markdown.js', condition: function () { return !!document.querySelector('[data-markdown]'); } },
+      { src: 'plugin/highlight/highlight.js', async: true, callback: function () { hljs.initHighlightingOnLoad(); } },
+      { src: 'plugin/notes/notes.js', async: true, condition: function () { return !!document.body.classList; } },
+      { src: 'plugin/math/math.js', async: true }
+    ];
+    // default options to init reveal.js
+    var defaultOptions = {
+      controls: true,
+      progress: true,
+      history: true,
+      center: true,
+      transition: 'default',
+      dependencies: deps
+    };
+    // options from URL query string
+    var queryOptions = Reveal.getQueryHash() || {};
+    var options = {
+      "width": 1920,
+      "height": 1080,
+      "notesSeparator": "note:",
+      "separator": "^[\r\n?|\n]---[\r\n?|\n]$",
+      "verticalSeparator": "^[\r\n?|\n]--[\r\n?|\n]$",
+      "theme": "night",
+      "highlightTheme": "Zenburn",
+      "controls": true,
+      "progress": true,
+      "slideNumber": false,
+      "history": true,
+      "keyboard": true,
+      "overview": true,
+      "center": true,
+      "touch": true,
+      "loop": false,
+      "rtl": false,
+      "shuffle": false,
+      "fragments": true,
+      "embedded": false,
+      "help": true,
+      "showNotes": false,
+      "autoSlide": 0,
+      "autoSlideStoppable": true,
+      "mouseWheel": false,
+      "hideAddressBar": true,
+      "previewLinks": false,
+      "transition": "default",
+      "transitionSpeed": "default",
+      "backgroundTransition": "default",
+      "viewDistance": 3,
+      "parallaxBackgroundImage": "",
+      "parallaxBackgroundSize": "",
+      "parallaxBackgroundHorizontal": null,
+      "parallaxBackgroundVertical": null,
+      "slideExplorerEnabled": true,
+      "browserPath": null,
+      "author": "Mark Bucklin",
+      "title": "Development & Application of a Closed-Loop Continuous Optical Neural Interface",
+      "date": "April 13, 2017",
+      "attributes": ""
+    };
+    options = extend(defaultOptions, options, queryOptions);
+    Reveal.initialize(options);
+
+  </script>
+
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+{
+  "name": "pandemic",
+  "author": "Lionel Rigoux <lionel.rigoux@gmail.com>",
+  "description": "Simplified academic writing using pandoc",
+  "version": "0.2.4",
+  "license": "BSD-3-Clause",
+  "keywords": [
+    "pandoc",
+    "writing",
+    "academic"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lionel-rigoux/pandemic.git"
+  },
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint .",
+    "lint-fix": "eslint . --fix",
+    "test": "echo \" Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "pandemic": "cli.js"
+  },
+  "dependencies": {
+    "caporal": "0.9.0",
+    "fs-extra": "5.0.0",
+    "parse-github-url": "1.0.2",
+    "shelljs": "0.8.1",
+    "yaml-front-matter": "3.4.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "8.2.1",
+    "eslint": "4.17.0",
+    "eslint-config-airbnb-base": "12.1.0",
+    "eslint-config-airbnb-standard": "1.6.6",
+    "eslint-config-standard": "11.0.0-beta.0",
+    "eslint-plugin-import": "2.8.0",
+    "eslint-plugin-jsx-a11y": "6.0.3",
+    "eslint-plugin-node": "6.0.0",
+    "eslint-plugin-promise": "3.6.0",
+    "eslint-plugin-react": "7.6.1",
+    "eslint-plugin-standard": "3.0.1"
+  }
+}

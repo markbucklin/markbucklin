@@ -1,0 +1,215 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		667F670D176AFE080047A351 /* c08_directemgain.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 667F670C176AFE080047A351 /* c08_directemgain.cpp */; };
+		667F670F176AFE4E0047A351 /* dcamapi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 667F670E176AFE4E0047A351 /* dcamapi.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		667F66F8176AFDB50047A351 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		667F66FA176AFDB50047A351 /* c08_directemgain */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = c08_directemgain; sourceTree = BUILT_PRODUCTS_DIR; };
+		667F670C176AFE080047A351 /* c08_directemgain.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = c08_directemgain.cpp; sourceTree = SOURCE_ROOT; };
+		667F670E176AFE4E0047A351 /* dcamapi.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = dcamapi.framework; path = ../../../../../../../../../Library/Frameworks/dcamapi.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		667F66F7176AFDB50047A351 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				667F670F176AFE4E0047A351 /* dcamapi.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		667F66EF176AFDB50047A351 = {
+			isa = PBXGroup;
+			children = (
+				667F670E176AFE4E0047A351 /* dcamapi.framework */,
+				667F66FD176AFDB50047A351 /* c08_directemgain */,
+				667F66FB176AFDB50047A351 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		667F66FB176AFDB50047A351 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				667F66FA176AFDB50047A351 /* c08_directemgain */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		667F66FD176AFDB50047A351 /* c08_directemgain */ = {
+			isa = PBXGroup;
+			children = (
+				667F670C176AFE080047A351 /* c08_directemgain.cpp */,
+			);
+			path = c08_directemgain;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		667F66F9176AFDB50047A351 /* c08_directemgain */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 667F6704176AFDB50047A351 /* Build configuration list for PBXNativeTarget "c08_directemgain" */;
+			buildPhases = (
+				667F66F6176AFDB50047A351 /* Sources */,
+				667F66F7176AFDB50047A351 /* Frameworks */,
+				667F66F8176AFDB50047A351 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = c08_directemgain;
+			productName = c08_directemgain;
+			productReference = 667F66FA176AFDB50047A351 /* c08_directemgain */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		667F66F1176AFDB50047A351 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = "浜松ホトニクス株式会社";
+			};
+			buildConfigurationList = 667F66F4176AFDB50047A351 /* Build configuration list for PBXProject "c08_directemgain" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 667F66EF176AFDB50047A351;
+			productRefGroup = 667F66FB176AFDB50047A351 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				667F66F9176AFDB50047A351 /* c08_directemgain */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		667F66F6176AFDB50047A351 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				667F670D176AFE080047A351 /* c08_directemgain.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		667F6702176AFDB50047A351 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		667F6703176AFDB50047A351 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		667F6705176AFDB50047A351 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = "";
+				VALID_ARCHS = i386;
+			};
+			name = Debug;
+		};
+		667F6706176AFDB50047A351 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = "";
+				VALID_ARCHS = i386;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		667F66F4176AFDB50047A351 /* Build configuration list for PBXProject "c08_directemgain" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				667F6702176AFDB50047A351 /* Debug */,
+				667F6703176AFDB50047A351 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		667F6704176AFDB50047A351 /* Build configuration list for PBXNativeTarget "c08_directemgain" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				667F6705176AFDB50047A351 /* Debug */,
+				667F6706176AFDB50047A351 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 667F66F1176AFDB50047A351 /* Project object */;
+}

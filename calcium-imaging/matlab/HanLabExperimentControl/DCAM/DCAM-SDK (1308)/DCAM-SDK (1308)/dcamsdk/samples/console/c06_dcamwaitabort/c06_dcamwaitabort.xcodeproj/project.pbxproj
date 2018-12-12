@@ -1,0 +1,227 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		66D8D52A17717D160091320F /* c06_dcamwaitabort.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 66D8D52917717D160091320F /* c06_dcamwaitabort.cpp */; };
+		66D8D53117717E810091320F /* dcamapi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66D8D53017717E810091320F /* dcamapi.framework */; };
+		66D8D53517717EE50091320F /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66D8D53417717EE50091320F /* CoreServices.framework */; };
+		66D8D53B17717F180091320F /* qthread.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 66D8D53917717F180091320F /* qthread.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		66D8D4F0177178DF0091320F /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		66D8D4F2177178DF0091320F /* c06_dcamwaitabort */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = c06_dcamwaitabort; sourceTree = BUILT_PRODUCTS_DIR; };
+		66D8D52917717D160091320F /* c06_dcamwaitabort.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = c06_dcamwaitabort.cpp; sourceTree = SOURCE_ROOT; };
+		66D8D53017717E810091320F /* dcamapi.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = dcamapi.framework; path = ../../../../../../../../../Library/Frameworks/dcamapi.framework; sourceTree = "<group>"; };
+		66D8D53417717EE50091320F /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = ../../../../../../../../../System/Library/Frameworks/CoreServices.framework; sourceTree = "<group>"; };
+		66D8D53917717F180091320F /* qthread.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = qthread.cpp; sourceTree = SOURCE_ROOT; };
+		66D8D53A17717F180091320F /* qthread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = qthread.h; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		66D8D4EF177178DF0091320F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66D8D53117717E810091320F /* dcamapi.framework in Frameworks */,
+				66D8D53517717EE50091320F /* CoreServices.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		66D8D4E7177178DF0091320F = {
+			isa = PBXGroup;
+			children = (
+				66D8D53017717E810091320F /* dcamapi.framework */,
+				66D8D53417717EE50091320F /* CoreServices.framework */,
+				66D8D4F5177178DF0091320F /* c06_dcamwaitabort */,
+				66D8D4F3177178DF0091320F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		66D8D4F3177178DF0091320F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				66D8D4F2177178DF0091320F /* c06_dcamwaitabort */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		66D8D4F5177178DF0091320F /* c06_dcamwaitabort */ = {
+			isa = PBXGroup;
+			children = (
+				66D8D52917717D160091320F /* c06_dcamwaitabort.cpp */,
+				66D8D53917717F180091320F /* qthread.cpp */,
+				66D8D53A17717F180091320F /* qthread.h */,
+			);
+			path = c06_dcamwaitabort;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		66D8D4F1177178DF0091320F /* c06_dcamwaitabort */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 66D8D4FC177178DF0091320F /* Build configuration list for PBXNativeTarget "c06_dcamwaitabort" */;
+			buildPhases = (
+				66D8D4EE177178DF0091320F /* Sources */,
+				66D8D4EF177178DF0091320F /* Frameworks */,
+				66D8D4F0177178DF0091320F /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = c06_dcamwaitabort;
+			productName = c06_dcamwaitabort;
+			productReference = 66D8D4F2177178DF0091320F /* c06_dcamwaitabort */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		66D8D4E9177178DF0091320F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = "浜松ホトニクス株式会社";
+			};
+			buildConfigurationList = 66D8D4EC177178DF0091320F /* Build configuration list for PBXProject "c06_dcamwaitabort" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 66D8D4E7177178DF0091320F;
+			productRefGroup = 66D8D4F3177178DF0091320F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				66D8D4F1177178DF0091320F /* c06_dcamwaitabort */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		66D8D4EE177178DF0091320F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66D8D52A17717D160091320F /* c06_dcamwaitabort.cpp in Sources */,
+				66D8D53B17717F180091320F /* qthread.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		66D8D4FA177178DF0091320F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = "";
+				VALID_ARCHS = i386;
+			};
+			name = Debug;
+		};
+		66D8D4FB177178DF0091320F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = "";
+				VALID_ARCHS = i386;
+			};
+			name = Release;
+		};
+		66D8D4FD177178DF0091320F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = "";
+				VALID_ARCHS = i386;
+			};
+			name = Debug;
+		};
+		66D8D4FE177178DF0091320F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = "";
+				VALID_ARCHS = i386;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		66D8D4EC177178DF0091320F /* Build configuration list for PBXProject "c06_dcamwaitabort" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				66D8D4FA177178DF0091320F /* Debug */,
+				66D8D4FB177178DF0091320F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		66D8D4FC177178DF0091320F /* Build configuration list for PBXNativeTarget "c06_dcamwaitabort" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				66D8D4FD177178DF0091320F /* Debug */,
+				66D8D4FE177178DF0091320F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 66D8D4E9177178DF0091320F /* Project object */;
+}

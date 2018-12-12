@@ -1,0 +1,221 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		667F674F176AFF060047A351 /* c10_mechanicalshutter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 667F674E176AFF060047A351 /* c10_mechanicalshutter.cpp */; };
+		667F6751176AFF0D0047A351 /* dcamapi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 667F6750176AFF0D0047A351 /* dcamapi.framework */; };
+		667F6755176AFF300047A351 /* mechctrl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 667F6753176AFF300047A351 /* mechctrl.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		667F673A176AFED30047A351 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		667F673C176AFED30047A351 /* c10_mechanicalshutter */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = c10_mechanicalshutter; sourceTree = BUILT_PRODUCTS_DIR; };
+		667F674E176AFF060047A351 /* c10_mechanicalshutter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = c10_mechanicalshutter.cpp; sourceTree = SOURCE_ROOT; };
+		667F6750176AFF0D0047A351 /* dcamapi.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = dcamapi.framework; path = ../../../../../../../../../Library/Frameworks/dcamapi.framework; sourceTree = "<group>"; };
+		667F6753176AFF300047A351 /* mechctrl.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = mechctrl.cpp; sourceTree = SOURCE_ROOT; };
+		667F6754176AFF300047A351 /* mechctrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mechctrl.h; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		667F6739176AFED30047A351 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				667F6751176AFF0D0047A351 /* dcamapi.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		667F6731176AFED30047A351 = {
+			isa = PBXGroup;
+			children = (
+				667F6750176AFF0D0047A351 /* dcamapi.framework */,
+				667F673F176AFED30047A351 /* c10_mechanicalshutter */,
+				667F673D176AFED30047A351 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		667F673D176AFED30047A351 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				667F673C176AFED30047A351 /* c10_mechanicalshutter */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		667F673F176AFED30047A351 /* c10_mechanicalshutter */ = {
+			isa = PBXGroup;
+			children = (
+				667F674E176AFF060047A351 /* c10_mechanicalshutter.cpp */,
+				667F6753176AFF300047A351 /* mechctrl.cpp */,
+				667F6754176AFF300047A351 /* mechctrl.h */,
+			);
+			path = c10_mechanicalshutter;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		667F673B176AFED30047A351 /* c10_mechanicalshutter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 667F6746176AFED30047A351 /* Build configuration list for PBXNativeTarget "c10_mechanicalshutter" */;
+			buildPhases = (
+				667F6738176AFED30047A351 /* Sources */,
+				667F6739176AFED30047A351 /* Frameworks */,
+				667F673A176AFED30047A351 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = c10_mechanicalshutter;
+			productName = c10_mechanicalshutter;
+			productReference = 667F673C176AFED30047A351 /* c10_mechanicalshutter */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		667F6733176AFED30047A351 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = "浜松ホトニクス株式会社";
+			};
+			buildConfigurationList = 667F6736176AFED30047A351 /* Build configuration list for PBXProject "c10_mechanicalshutter" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 667F6731176AFED30047A351;
+			productRefGroup = 667F673D176AFED30047A351 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				667F673B176AFED30047A351 /* c10_mechanicalshutter */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		667F6738176AFED30047A351 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				667F674F176AFF060047A351 /* c10_mechanicalshutter.cpp in Sources */,
+				667F6755176AFF300047A351 /* mechctrl.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		667F6744176AFED30047A351 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		667F6745176AFED30047A351 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		667F6747176AFED30047A351 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = "";
+				VALID_ARCHS = i386;
+			};
+			name = Debug;
+		};
+		667F6748176AFED30047A351 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = "";
+				VALID_ARCHS = i386;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		667F6736176AFED30047A351 /* Build configuration list for PBXProject "c10_mechanicalshutter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				667F6744176AFED30047A351 /* Debug */,
+				667F6745176AFED30047A351 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		667F6746176AFED30047A351 /* Build configuration list for PBXNativeTarget "c10_mechanicalshutter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				667F6747176AFED30047A351 /* Debug */,
+				667F6748176AFED30047A351 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 667F6733176AFED30047A351 /* Project object */;
+}

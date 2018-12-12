@@ -1,0 +1,29 @@
+% UPDATESTATISTICSGPU
+% 
+% USAGE:
+%			>> stat = updateStatisticsGPU(F);
+%			>> stat = updateStatisticsGPU(F, stat);
+%
+% SEE ALSO:
+%			COMPUTENONSTATIONARITYRUNGPUKERNEL, GETSTATISTICDIFFERENTIALGPU RTSCI.STATISTICCOLLECTOR
+%
+% Mark Bucklin
+
+
+% ============================================================
+% GPU COMPANION FUNCTION UNIVERSAL HEADER
+% ============================================================
+persistent ...
+	rowDim colDim channelDim frameDim ...
+	numRows numCols numChannels numFrames ...
+	rowSubs colSubs chanSubs frameSubs ...
+	numPixels
+if isempty(numPixels) || (numel(F) ~= numPixels) %, defineVideoFormat, end
+	[numRows,numCols,numChannels,numFrames] = getVideoSegmentSize(F);
+	[rowSubs, colSubs, chanSubs, frameSubs] = getVideoSegmentSubscripts(F);
+	[rowDim, colDim, channelDim, frameDim] = getVideoSegmentDimension();
+	numPixels = numel(F);
+end
+
+
+
