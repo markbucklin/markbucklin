@@ -1,5 +1,0 @@
-obj = WebCameraDataGenerator;
-activate(obj);
-
-
-

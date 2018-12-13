@@ -1,2 +1,0 @@
-movementFunction	moveBucklin
-transformationFunction	transformPerspective

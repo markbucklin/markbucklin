@@ -1,6 +1,0 @@
-; ExCapUI.def : Declares the module parameters for the DLL.
-
-LIBRARY      "ExCapUI"
-
-EXPORTS
-	excapui_entry		@1
